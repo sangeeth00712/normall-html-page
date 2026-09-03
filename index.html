@@ -1,0 +1,224 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mentalist - Fan Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: #8b0000;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4444;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(#000b, #000b),
+                        url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            color: #ff3333;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .characters {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #222;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px #555;
+        }
+
+        .card h3 {
+            color: #ff4444;
+        }
+
+        button {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+
+        #message {
+            margin-top: 20px;
+            color: #ff6666;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>THE MENTALIST</h1>
+        <p>Read between the lines.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#characters">Characters</a>
+        <a href="#seasons">Seasons</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Patrick Jane</h2>
+        <p>
+            A brilliant mentalist who uses observation,
+            psychology and manipulation to solve crimes.
+        </p>
+
+        <button onclick="revealMessage()">
+            Reveal the Secret
+        </button>
+
+        <div id="message"></div>
+    </div>
+
+    <section id="characters">
+        <h2>Popular Characters</h2>
+
+        <div class="characters">
+
+            <div class="card">
+                <h3>Patrick Jane</h3>
+                <p>
+                    A highly observant mentalist and consultant
+                    who helps the CBI solve difficult cases.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Teresa Lisbon</h3>
+                <p>
+                    A senior investigator who leads the team
+                    and often works closely with Patrick Jane.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Kimball Cho</h3>
+                <p>
+                    A calm and serious investigator known
+                    for his direct and logical approach.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Wayne Rigsby</h3>
+                <p>
+                    An investigator and member of the CBI team.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="seasons">
+        <h2>Seasons</h2>
+
+        <ol>
+            <li>Season 1</li>
+            <li>Season 2</li>
+            <li>Season 3</li>
+            <li>Season 4</li>
+            <li>Season 5</li>
+            <li>Season 6</li>
+            <li>Season 7</li>
+        </ol>
+    </section>
+
+    <section id="about">
+        <h2>About The Mentalist</h2>
+
+        <p>
+            The Mentalist is a crime drama series centered around
+            Patrick Jane, a former fake psychic who uses his exceptional
+            observation and psychological skills to help investigators
+            solve crimes.
+        </p>
+    </section>
+
+    <footer>
+        <p>The Mentalist Fan Page | Created with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("message").innerHTML =
+                "Your secret: You are being watched... by Patrick Jane! 🃏";
+        }
+    </script>
+
+</body>
+</html>
+```
+
